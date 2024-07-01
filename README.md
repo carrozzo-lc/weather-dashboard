@@ -10,16 +10,15 @@ cd weather-widget
 ```
 Then, install the project dependencies:
 ```bash
-npm  install
+npm install
 ```
 Run the development server:
 
 ```bash
-npm  run  dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
   
 ## Online Demo
 
