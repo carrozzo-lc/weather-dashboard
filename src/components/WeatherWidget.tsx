@@ -61,12 +61,14 @@ const WeatherWidget = () => {
 
       <div className="bg-white p-8 rounded-2xl mt-4 border border-slate-300">
         {weather ? (
-          <div className="text-center text-slate-900">
+          <div className="block text-center text-slate-900">
             <WeatherImage weatherCode={weather.current_weather.weathercode}/>
 
-            <div className="w-[54px] m-auto text-5xl font-semibold relative mt-4">
-              {Math.round(weather.current_weather.temperature)}
-              <div className="absolute top-0 -right-4 text-sm font-normal">°C</div>
+            <div className="m-auto text-5xl font-semibold mt-4">
+              <div className="inline-block relative">
+                {Math.round(weather.current_weather.temperature)}
+                <div className="absolute top-0 -right-4 text-sm font-normal">°C</div>
+              </div>
             </div>
 
             <div className="text-slate-700">{weatherDescriptions[weather.current_weather.weathercode]}</div>
